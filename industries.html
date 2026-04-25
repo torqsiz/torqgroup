@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Industries — TORQ Group</title>
+  <meta name="description" content="TORQ Group works with construction, logistics, industrial and facilities operations across South Africa."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #f6f6f4;
+      --dark: #111111;
+      --mid: #666666;
+      --light: #e8e8e4;
+      --border: #d0d0cc;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--dark); font-family: 'Barlow', sans-serif; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; line-height: 0.92; }
+    .label { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mid); font-weight: 600; }
+    .nav-link { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--mid); text-decoration: none; transition: color 0.15s; }
+    .nav-link:hover { color: var(--dark); }
+    .btn-dark { display: inline-block; background: var(--dark); color: var(--bg); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px 28px; text-decoration: none; transition: opacity 0.15s; white-space: nowrap; }
+    .btn-dark:hover { opacity: 0.75; }
+    .btn-light { display: inline-block; background: var(--bg); color: var(--dark); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px 28px; text-decoration: none; transition: opacity 0.15s; }
+    .btn-light:hover { opacity: 0.75; }
+    .pill { display: inline-block; background: var(--light); color: var(--mid); font-family: 'Barlow Condensed', sans-serif; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; padding: 6px 14px; }
+    #mob-menu { display: none; }
+    #mob-menu.open { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav style="background:var(--bg); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+    <a href="index.html" style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:0.05em; color:var(--dark); text-decoration:none;">TORQ GROUP</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="industries.html" class="nav-link" style="color:var(--dark);">Industries</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20need%20help%20with%20sourcing%20and%20supply%20coordination.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark hidden md:inline-block">Send Requirement →</a>
+    <button onclick="document.getElementById('mob-menu').classList.toggle('open')" class="md:hidden" style="background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:5px;padding:4px;">
+      <span style="display:block;width:24px;height:2px;background:var(--dark);"></span>
+      <span style="display:block;width:24px;height:2px;background:var(--dark);"></span>
+      <span style="display:block;width:24px;height:2px;background:var(--dark);"></span>
+    </button>
+  </div>
+  <div id="mob-menu" style="border-top:1px solid var(--border); background:var(--bg);">
+    <div style="max-width:1200px; margin:0 auto; padding:20px 24px; display:flex; flex-direction:column; gap:16px;">
+      <a href="industries.html" class="nav-link" style="color:var(--dark);">Industries</a>
+      <a href="services.html" class="nav-link" style="color:var(--dark);">Services</a>
+      <a href="about.html" class="nav-link" style="color:var(--dark);">About</a>
+      <a href="contact.html" class="nav-link" style="color:var(--dark);">Contact</a>
+      <a href="https://wa.me/27000000000?text=Hi%2C%20I%20need%20help%20with%20sourcing%20and%20supply%20coordination.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark" style="text-align:center;">Send Requirement →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── PAGE HEADER ─── -->
+<section style="background:var(--dark); color:var(--bg); padding:clamp(60px,8vw,120px) 24px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="label" style="color:#777; margin-bottom:24px;">Industries</p>
+    <h1 style="font-size:clamp(56px,9vw,120px); max-width:800px;">What We Work With</h1>
+    <p style="margin-top:24px; font-size:17px; color:#999; max-width:520px; line-height:1.65; font-weight:300;">We coordinate supply for operational businesses across four sectors. Send a requirement for any of the below.</p>
+  </div>
+</section>
+
+<!-- ─── QUICK JUMP ─── -->
+<section style="border-bottom:1px solid var(--border); padding:20px 24px; background:var(--bg); position:sticky; top:64px; z-index:80;">
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:8px;">
+    <a href="#construction" style="text-decoration:none;" class="pill">Construction</a>
+    <a href="#logistics" style="text-decoration:none;" class="pill">Logistics</a>
+    <a href="#industrial" style="text-decoration:none;" class="pill">Industrial</a>
+    <a href="#facilities" style="text-decoration:none;" class="pill">Facilities</a>
+  </div>
+</section>
+
+<!-- ─── CONSTRUCTION ─── -->
+<section id="construction" style="border-bottom:1px solid var(--border); padding:clamp(60px,7vw,100px) 24px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div style="display:flex; flex-wrap:wrap; gap:48px;">
+      <div style="flex:0 0 auto; min-width:120px; padding-top:4px;">
+        <p class="label" style="margin-bottom:8px;">01</p>
+        <p class="label">Construction</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h2 style="font-size:clamp(40px,5vw,72px); margin-bottom:28px;">Construction</h2>
+        <p style="font-size:16px; color:var(--mid); line-height:1.75; max-width:560px; margin-bottom:32px;">Sites move fast. Stock-outs and delayed materials slow everything. We coordinate sourcing so your procurement team isn't chasing down availability or re-quoting every week.</p>
+        <p class="label" style="margin-bottom:16px;">What We Handle</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:40px;">
+          <span class="pill">PPE &amp; Safety Gear</span>
+          <span class="pill">Site Consumables</span>
+          <span class="pill">Concrete &amp; Aggregates</span>
+          <span class="pill">Steel &amp; Fasteners</span>
+          <span class="pill">Electrical Materials</span>
+          <span class="pill">Plumbing Supplies</span>
+          <span class="pill">Hand &amp; Power Tools</span>
+          <span class="pill">Material Coordination</span>
+        </div>
+        <a href="https://wa.me/27000000000?text=Hi%2C%20I%20have%20a%20construction%20supply%20requirement.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark">Send Construction Requirement →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── LOGISTICS ─── -->
+<section id="logistics" style="border-bottom:1px solid var(--border); padding:clamp(60px,7vw,100px) 24px; background:#efefed;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div style="display:flex; flex-wrap:wrap; gap:48px;">
+      <div style="flex:0 0 auto; min-width:120px; padding-top:4px;">
+        <p class="label" style="margin-bottom:8px;">02</p>
+        <p class="label">Logistics</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h2 style="font-size:clamp(40px,5vw,72px); margin-bottom:28px;">Logistics</h2>
+        <p style="font-size:16px; color:var(--mid); line-height:1.75; max-width:560px; margin-bottom:32px;">Fleets and warehouses have ongoing consumable needs that can't wait. We manage sourcing across multiple suppliers so your operation doesn't stall waiting on parts or supplies.</p>
+        <p class="label" style="margin-bottom:16px;">What We Handle</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:40px;">
+          <span class="pill">Fleet Consumables</span>
+          <span class="pill">Lubricants &amp; Fluids</span>
+          <span class="pill">Tyres &amp; Tubes</span>
+          <span class="pill">Filters &amp; Belts</span>
+          <span class="pill">Warehouse Racking</span>
+          <span class="pill">Packing &amp; Strapping</span>
+          <span class="pill">Forklift Consumables</span>
+          <span class="pill">Workshop Supplies</span>
+        </div>
+        <a href="https://wa.me/27000000000?text=Hi%2C%20I%20have%20a%20logistics%20supply%20requirement.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark">Send Logistics Requirement →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INDUSTRIAL ─── -->
+<section id="industrial" style="border-bottom:1px solid var(--border); padding:clamp(60px,7vw,100px) 24px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div style="display:flex; flex-wrap:wrap; gap:48px;">
+      <div style="flex:0 0 auto; min-width:120px; padding-top:4px;">
+        <p class="label" style="margin-bottom:8px;">03</p>
+        <p class="label">Industrial</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h2 style="font-size:clamp(40px,5vw,72px); margin-bottom:28px;">Industrial</h2>
+        <p style="font-size:16px; color:var(--mid); line-height:1.75; max-width:560px; margin-bottom:32px;">Engineering and fabrication operations require precision sourcing. Incorrect specs or delayed materials can halt production. We coordinate supply to keep your floor running.</p>
+        <p class="label" style="margin-bottom:16px;">What We Handle</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:40px;">
+          <span class="pill">Fabrication Materials</span>
+          <span class="pill">Engineering Consumables</span>
+          <span class="pill">Bearings &amp; Seals</span>
+          <span class="pill">Welding Supplies</span>
+          <span class="pill">Cutting Tools</span>
+          <span class="pill">Hydraulic Components</span>
+          <span class="pill">Machine Spares</span>
+          <span class="pill">Abrasives &amp; Grinding</span>
+        </div>
+        <a href="https://wa.me/27000000000?text=Hi%2C%20I%20have%20an%20industrial%20supply%20requirement.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark">Send Industrial Requirement →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FACILITIES ─── -->
+<section id="facilities" style="border-bottom:1px solid var(--border); padding:clamp(60px,7vw,100px) 24px; background:#efefed;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div style="display:flex; flex-wrap:wrap; gap:48px;">
+      <div style="flex:0 0 auto; min-width:120px; padding-top:4px;">
+        <p class="label" style="margin-bottom:8px;">04</p>
+        <p class="label">Facilities</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h2 style="font-size:clamp(40px,5vw,72px); margin-bottom:28px;">Facilities</h2>
+        <p style="font-size:16px; color:var(--mid); line-height:1.75; max-width:560px; margin-bottom:32px;">Facility operations depend on consistent stock of maintenance and cleaning supplies. Managing multiple suppliers wastes time. We consolidate the sourcing so your facility team can focus on operations.</p>
+        <p class="label" style="margin-bottom:16px;">What We Handle</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:40px;">
+          <span class="pill">Cleaning Chemicals</span>
+          <span class="pill">Janitorial Supplies</span>
+          <span class="pill">Maintenance Materials</span>
+          <span class="pill">Plumbing &amp; Electrical</span>
+          <span class="pill">Hygiene Products</span>
+          <span class="pill">HVAC Consumables</span>
+          <span class="pill">Building Maintenance</span>
+          <span class="pill">Operational Supply</span>
+        </div>
+        <a href="https://wa.me/27000000000?text=Hi%2C%20I%20have%20a%20facilities%20supply%20requirement.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark">Send Facilities Requirement →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section style="background:var(--dark); color:var(--bg); padding:clamp(60px,8vw,120px) 24px; text-align:center;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <h2 style="font-size:clamp(40px,7vw,96px); margin-bottom:36px;">Not sure which category?<br>Send the requirement.</h2>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20need%20help%20with%20sourcing%20and%20supply%20coordination.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-light">Send Requirement →</a>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer style="border-top:1px solid var(--border); padding:48px 24px;">
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:32px;">
+    <div>
+      <p style="font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:0.05em;">TORQ GROUP</p>
+      <p style="font-size:13px; color:var(--mid); margin-top:4px;">Johannesburg, South Africa</p>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:28px;">
+      <a href="industries.html" class="nav-link">Industries</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20need%20help%20with%20sourcing%20and%20supply%20coordination.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark">Send Requirement →</a>
+  </div>
+  <div style="max-width:1200px; margin:40px auto 0; padding-top:24px; border-top:1px solid var(--border);">
+    <p style="font-size:12px; color:#bbb;">© 2025 TORQ Group. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

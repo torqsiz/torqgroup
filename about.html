@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — TORQ Group</title>
+  <meta name="description" content="TORQ Group is a procurement and supply coordination business based in Johannesburg, South Africa. We are not a supplier — we manage sourcing for operational businesses."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --bg: #f6f6f4; --dark: #111111; --mid: #666666; --light: #e8e8e4; --border: #d0d0cc; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--dark); font-family: 'Barlow', sans-serif; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; line-height: 0.92; }
+    .label { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--mid); font-weight: 600; }
+    .nav-link { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--mid); text-decoration: none; transition: color 0.15s; }
+    .nav-link:hover { color: var(--dark); }
+    .btn-dark { display: inline-block; background: var(--dark); color: var(--bg); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px 28px; text-decoration: none; transition: opacity 0.15s; white-space: nowrap; }
+    .btn-dark:hover { opacity: 0.75; }
+    .btn-light { display: inline-block; background: var(--bg); color: var(--dark); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px 28px; text-decoration: none; transition: opacity 0.15s; }
+    .btn-light:hover { opacity: 0.75; }
+    #mob-menu { display: none; }
+    #mob-menu.open { display: block; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav style="background:var(--bg); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+    <a href="index.html" style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:0.05em; color:var(--dark); text-decoration:none;">TORQ GROUP</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="industries.html" class="nav-link">Industries</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link" style="color:var(--dark);">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20need%20help%20with%20sourcing%20and%20supply%20coordination.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark hidden md:inline-block">Send Requirement →</a>
+    <button onclick="document.getElementById('mob-menu').classList.toggle('open')" class="md:hidden" style="background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:5px;padding:4px;">
+      <span style="display:block;width:24px;height:2px;background:var(--dark);"></span>
+      <span style="display:block;width:24px;height:2px;background:var(--dark);"></span>
+      <span style="display:block;width:24px;height:2px;background:var(--dark);"></span>
+    </button>
+  </div>
+  <div id="mob-menu" style="border-top:1px solid var(--border); background:var(--bg);">
+    <div style="max-width:1200px; margin:0 auto; padding:20px 24px; display:flex; flex-direction:column; gap:16px;">
+      <a href="industries.html" class="nav-link" style="color:var(--dark);">Industries</a>
+      <a href="services.html" class="nav-link" style="color:var(--dark);">Services</a>
+      <a href="about.html" class="nav-link" style="color:var(--dark);">About</a>
+      <a href="contact.html" class="nav-link" style="color:var(--dark);">Contact</a>
+      <a href="https://wa.me/27000000000?text=Hi%2C%20I%20need%20help%20with%20sourcing%20and%20supply%20coordination.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark" style="text-align:center;">Send Requirement →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section style="background:var(--dark); color:var(--bg); padding:clamp(60px,8vw,120px) 24px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="label" style="color:#777; margin-bottom:24px;">About</p>
+    <h1 style="font-size:clamp(56px,9vw,120px); max-width:800px; margin-bottom:40px;">What TORQ Is</h1>
+    <p style="font-size:clamp(20px,2.5vw,28px); font-family:'Barlow Condensed',sans-serif; font-weight:600; color:var(--bg); max-width:640px; line-height:1.35;">We are not a supplier. We manage sourcing and coordination for operational businesses.</p>
+  </div>
+</section>
+
+<!-- ─── POSITIONING ─── -->
+<section style="border-bottom:1px solid var(--border); padding:clamp(60px,7vw,100px) 24px;">
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:64px;">
+    <div style="flex:1; min-width:280px; max-width:600px;">
+      <p style="font-size:17px; color:var(--mid); line-height:1.8; margin-bottom:24px;">Operational businesses — construction, logistics, industrial, facilities — have a consistent problem: getting the right materials, at the right price, at the right time.</p>
+      <p style="font-size:17px; color:var(--mid); line-height:1.8; margin-bottom:24px;">The procurement process gets in the way. Chasing suppliers. Inconsistent pricing. Delivery that doesn't show. Availability that changes. These issues take up time that should go into running the operation.</p>
+      <p style="font-size:17px; color:var(--mid); line-height:1.8;">TORQ exists to handle that coordination. We sit between the operation and the supply chain — managing sourcing, pricing, and delivery so the operation keeps moving.</p>
+    </div>
+    <div style="flex:0 0 auto; min-width:220px;">
+      <div style="padding:32px; border:1px solid var(--border); margin-bottom:1px;">
+        <p class="label" style="margin-bottom:12px;">What We Are</p>
+        <p style="font-size:15px; color:var(--dark); line-height:1.65;">A procurement and supply coordination business.</p>
+      </div>
+      <div style="padding:32px; border:1px solid var(--border); border-top:none; margin-bottom:1px;">
+        <p class="label" style="margin-bottom:12px;">What We Are Not</p>
+        <p style="font-size:15px; color:var(--dark); line-height:1.65;">A supplier. We don't hold stock. We manage the sourcing process.</p>
+      </div>
+      <div style="padding:32px; border:1px solid var(--border); border-top:none;">
+        <p class="label" style="margin-bottom:12px;">Where We Operate</p>
+        <p style="font-size:15px; color:var(--dark); line-height:1.65;">Johannesburg, South Africa. Available nationally for sourcing and coordination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHERE WE STEP IN ─── -->
+<section style="border-bottom:1px solid var(--border); padding:clamp(60px,7vw,100px) 24px; background:#efefed;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="label" style="margin-bottom:40px;">Where We Step In</p>
+    <div style="display:grid; gap:1px; background:var(--border);" class="md:grid-cols-3 grid-cols-1" style="display:grid;">
+      <div style="background:#efefed; padding:clamp(24px,3vw,44px);">
+        <p style="font-family:'Bebas Neue',sans-serif; font-size:24px; margin-bottom:16px;">Sourcing Delays</p>
+        <p style="font-size:14px; color:var(--mid); line-height:1.75;">When your team is spending time sourcing instead of operating. We take that off the plate.</p>
+      </div>
+      <div style="background:#efefed; padding:clamp(24px,3vw,44px);">
+        <p style="font-family:'Bebas Neue',sans-serif; font-size:24px; margin-bottom:16px;">Pricing Inconsistency</p>
+        <p style="font-size:14px; color:var(--mid); line-height:1.75;">When suppliers quote differently every time and you can't benchmark. We structure pricing so you can compare.</p>
+      </div>
+      <div style="background:#efefed; padding:clamp(24px,3vw,44px);">
+        <p style="font-family:'Bebas Neue',sans-serif; font-size:24px; margin-bottom:16px;">Supplier Reliability</p>
+        <p style="font-size:14px; color:var(--mid); line-height:1.75;">When delivery doesn't arrive on time or specs don't match. We manage the supplier accountability so you don't have to.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section style="background:var(--dark); color:var(--bg); padding:clamp(60px,8vw,120px) 24px; text-align:center;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <h2 style="font-size:clamp(40px,7vw,96px); margin-bottom:36px;">Send a requirement.<br>See how we work.</h2>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20need%20help%20with%20sourcing%20and%20supply%20coordination.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-light">Send Requirement →</a>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer style="border-top:1px solid var(--border); padding:48px 24px;">
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:32px;">
+    <div>
+      <p style="font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:0.05em;">TORQ GROUP</p>
+      <p style="font-size:13px; color:var(--mid); margin-top:4px;">Johannesburg, South Africa</p>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:28px;">
+      <a href="industries.html" class="nav-link">Industries</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20need%20help%20with%20sourcing%20and%20supply%20coordination.%20I'll%20send%20the%20details." target="_blank" rel="noopener" class="btn-dark">Send Requirement →</a>
+  </div>
+  <div style="max-width:1200px; margin:40px auto 0; padding-top:24px; border-top:1px solid var(--border);">
+    <p style="font-size:12px; color:#bbb;">© 2025 TORQ Group. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Responsive grid fix -->
+<style>
+  @media (min-width: 768px) { .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr) !important; } }
+</style>
+
+</body>
+</html>
